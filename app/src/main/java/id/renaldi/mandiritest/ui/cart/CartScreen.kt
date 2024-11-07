@@ -12,23 +12,16 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import coil.compose.rememberAsyncImagePainter
-import coil.request.ImageRequest
 import com.oyamo.dooka_app.core.util.UiEvents
 import id.renaldi.mandiritest.R
 import com.ramcosta.composedestinations.annotation.Destination
-import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import id.renaldi.mandiritest.core.shared.component.LoadingAnimation
-import id.renaldi.mandiritest.domain.model.cart.CartProduct
 import id.renaldi.mandiritest.ui.cart.component.CartItem
 import kotlinx.coroutines.flow.collectLatest
 
@@ -36,7 +29,6 @@ import kotlinx.coroutines.flow.collectLatest
 @Destination
 @Composable
 fun CartScreen(
-    navigator: DestinationsNavigator,
     viewModel: CartViewModel = hiltViewModel()
 ) {
 

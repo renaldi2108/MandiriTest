@@ -30,7 +30,9 @@ import coil.request.ImageRequest
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import id.renaldi.mandiritest.R
 import id.renaldi.mandiritest.core.presentation.theme.Pink40
+import id.renaldi.mandiritest.data.local.wish_list.mapper.toProduct
 import id.renaldi.mandiritest.domain.model.Wishlist
+import id.renaldi.mandiritest.ui.destinations.ProductDetailsScreenDestination
 import id.renaldi.mandiritest.ui.wishlist.WishlistViewModel
 
 @Composable
@@ -42,7 +44,11 @@ fun WishlistItem(
 ) {
     Card(
         modifier = modifier.clickable {
-//            navigator.navigate(ProductDetailsScreenDestination(wishlist.toProduct()))
+            navigator.navigate(
+                ProductDetailsScreenDestination(
+                    wishlist.toProduct()
+                )
+            )
         },
         shape = RoundedCornerShape(8.dp),
         elevation = 3.dp

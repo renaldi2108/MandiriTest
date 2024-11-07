@@ -10,7 +10,6 @@ import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
@@ -24,11 +23,9 @@ import id.renaldi.mandiritest.R
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import id.renaldi.mandiritest.core.presentation.theme.MainWhiteColor
-import id.renaldi.mandiritest.core.presentation.theme.Pink40
 import id.renaldi.mandiritest.ui.destinations.LoginScreenDestination
 import kotlin.system.exitProcess
 
-@OptIn(ExperimentalComposeUiApi::class)
 @Destination
 @Composable
 fun AuthDashboardScreen(

@@ -4,7 +4,6 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.oyamo.dooka_app.core.util.UiEvents
 import dagger.hilt.android.lifecycle.HiltViewModel
 import id.renaldi.mandiritest.data.repository.auth.AuthRepository
 import id.renaldi.mandiritest.data.repository.profile.ProfileRepository

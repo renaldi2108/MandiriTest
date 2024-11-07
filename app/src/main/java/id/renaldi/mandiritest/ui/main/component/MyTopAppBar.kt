@@ -47,7 +47,7 @@ fun MyTopAppBar(
     Column(
         Modifier
             .fillMaxWidth()
-            .padding(12.dp), /*horizontalAlignment = Alignment.CenterHorizontally*/
+            .padding(12.dp),
     ) {
         Row(
             Modifier
@@ -99,7 +99,6 @@ fun MyTopAppBar(
                 placeholder = {
                     Text(
                         text = "Search",
-                        //color = primaryGray
                     )
                 },
 
