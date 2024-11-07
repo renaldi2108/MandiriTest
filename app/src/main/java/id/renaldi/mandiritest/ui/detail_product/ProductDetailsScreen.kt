@@ -111,7 +111,7 @@ fun ProductDetailsScreen(
                             painterResource(id = R.drawable.ic_heart)
                         },
                         tint = if (inWishlist) {
-                            PurpleGrey80
+                            Pink40
                         } else {
                             Purple40
                         },
